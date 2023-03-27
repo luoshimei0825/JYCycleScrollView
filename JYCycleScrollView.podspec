@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "JYCycleScrollView"
-  spec.version      = "0.0.2"
+  spec.version      = "0.0.3"
   spec.license  = 'MIT'
   spec.summary      = "JYCycleScrollView"
   
