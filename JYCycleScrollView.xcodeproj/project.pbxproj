@@ -10,6 +10,7 @@
 		8827E46D29D1495F00EDB703 /* JYCycleScrollView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8827E46429D1495F00EDB703 /* JYCycleScrollView.framework */; };
 		8827E47229D1495F00EDB703 /* JYCycleScrollViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8827E47129D1495F00EDB703 /* JYCycleScrollViewTests.m */; };
 		8827E47329D1495F00EDB703 /* JYCycleScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8827E46729D1495F00EDB703 /* JYCycleScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8827E47D29D149DB00EDB703 /* JYCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8827E47C29D149DB00EDB703 /* JYCycleScrollView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -20,6 +21,27 @@
 			remoteGlobalIDString = 8827E46329D1495F00EDB703;
 			remoteInfo = JYCycleScrollView;
 		};
+		8827E4C529D14A7200EDB703 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8827E4BF29D14A7200EDB703 /* Example.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8827E48729D14A6F00EDB703;
+			remoteInfo = Example;
+		};
+		8827E4C729D14A7200EDB703 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8827E4BF29D14A7200EDB703 /* Example.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8827E4A229D14A7200EDB703;
+			remoteInfo = ExampleTests;
+		};
+		8827E4C929D14A7200EDB703 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8827E4BF29D14A7200EDB703 /* Example.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8827E4AC29D14A7200EDB703;
+			remoteInfo = ExampleUITests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +49,8 @@
 		8827E46729D1495F00EDB703 /* JYCycleScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYCycleScrollView.h; sourceTree = "<group>"; };
 		8827E46C29D1495F00EDB703 /* JYCycleScrollViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JYCycleScrollViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8827E47129D1495F00EDB703 /* JYCycleScrollViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYCycleScrollViewTests.m; sourceTree = "<group>"; };
+		8827E47C29D149DB00EDB703 /* JYCycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYCycleScrollView.m; sourceTree = "<group>"; };
+		8827E4BF29D14A7200EDB703 /* Example.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Example.xcodeproj; path = Example/Example.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +75,7 @@
 		8827E45A29D1495F00EDB703 = {
 			isa = PBXGroup;
 			children = (
+				8827E4BF29D14A7200EDB703 /* Example.xcodeproj */,
 				8827E46629D1495F00EDB703 /* JYCycleScrollView */,
 				8827E47029D1495F00EDB703 /* JYCycleScrollViewTests */,
 				8827E46529D1495F00EDB703 /* Products */,
@@ -70,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				8827E46729D1495F00EDB703 /* JYCycleScrollView.h */,
+				8827E47C29D149DB00EDB703 /* JYCycleScrollView.m */,
 			);
 			path = JYCycleScrollView;
 			sourceTree = "<group>";
@@ -80,6 +106,16 @@
 				8827E47129D1495F00EDB703 /* JYCycleScrollViewTests.m */,
 			);
 			path = JYCycleScrollViewTests;
+			sourceTree = "<group>";
+		};
+		8827E4C029D14A7200EDB703 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8827E4C629D14A7200EDB703 /* Example.app */,
+				8827E4C829D14A7200EDB703 /* ExampleTests.xctest */,
+				8827E4CA29D14A7200EDB703 /* ExampleUITests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,6 +196,12 @@
 			mainGroup = 8827E45A29D1495F00EDB703;
 			productRefGroup = 8827E46529D1495F00EDB703 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 8827E4C029D14A7200EDB703 /* Products */;
+					ProjectRef = 8827E4BF29D14A7200EDB703 /* Example.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				8827E46329D1495F00EDB703 /* JYCycleScrollView */,
@@ -167,6 +209,30 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		8827E4C629D14A7200EDB703 /* Example.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = Example.app;
+			remoteRef = 8827E4C529D14A7200EDB703 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8827E4C829D14A7200EDB703 /* ExampleTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ExampleTests.xctest;
+			remoteRef = 8827E4C729D14A7200EDB703 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8827E4CA29D14A7200EDB703 /* ExampleUITests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ExampleUITests.xctest;
+			remoteRef = 8827E4C929D14A7200EDB703 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		8827E46229D1495F00EDB703 /* Resources */ = {
@@ -190,6 +256,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8827E47D29D149DB00EDB703 /* JYCycleScrollView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,7 +330,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -318,7 +385,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -350,6 +417,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.iloveu.JYCycleScrollView;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -377,6 +447,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.iloveu.JYCycleScrollView;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -1,0 +1,23 @@
+PODS:
+  - JYCycleScrollView (0.0.1)
+  - LookinServer (1.0.0)
+
+DEPENDENCIES:
+  - JYCycleScrollView (from `../`)
+  - LookinServer
+
+SPEC REPOS:
+  trunk:
+    - LookinServer
+
+EXTERNAL SOURCES:
+  JYCycleScrollView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  JYCycleScrollView: b9887ac7bf7f1ba751f7733de74dd22aaaaeb8ba
+  LookinServer: 0002891cd3cec5e082a910e897dfe71b4f06b89e
+
+PODFILE CHECKSUM: f0762dd0e770e5493e3f2e4621a7bdc613a09ff4
+
+COCOAPODS: 1.12.0
