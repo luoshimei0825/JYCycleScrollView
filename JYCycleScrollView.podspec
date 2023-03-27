@@ -13,7 +13,7 @@ Pod::Spec.new do |spec|
   spec.ios.deployment_target = "8.0"
   spec.ios.frameworks = 'Foundation', 'UIKit'
 
-  spec.source       = { :git => 'https://github.com/luoshimei0825/JYCycleScrollView.git', :tag => "v#{spec.version}" }
+  spec.source       = { :git => 'https://github.com/luoshimei0825/JYCycleScrollView.git',:branch=>'master', :tag => "v#{spec.version}" }
 
   # spec.source_files  = "JYCycleScrollView", "JYCycleScrollView/**/*.{h,m}"
   spec.source_files = 'JYCycleScrollView/**/*.{h,m}'
