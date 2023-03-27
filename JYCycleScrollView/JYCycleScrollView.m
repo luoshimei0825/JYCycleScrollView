@@ -88,12 +88,14 @@
 - (void)addImageViewToScrollView {
     UIButton *firstView = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, self.bounds.size.width, self.bounds.size.height)];
     [firstView setBackgroundImage:[UIImage imageNamed:_imageNamesArray.lastObject] forState:UIControlStateNormal];
+    firstView.adjustsImageWhenHighlighted = NO;
     firstView.tag = JYIndexFlag + _imageNamesArray.count;
     [firstView addTarget:self action:@selector(imageViewButtonHandler:) forControlEvents:UIControlEventTouchUpInside];
     [self.scrollView addSubview:firstView];
 
     for (NSInteger i = 1; i <= _imageNamesArray.count; i++) {
         UIButton *imageView = [[UIButton alloc] initWithFrame:CGRectMake(self.bounds.size.width * i, 0, self.bounds.size.width, self.bounds.size.height)];
+        imageView.adjustsImageWhenHighlighted = NO;
         [imageView setBackgroundImage:[UIImage imageNamed:_imageNamesArray[i - 1]] forState:UIControlStateNormal];
         imageView.tag = JYIndexFlag + i;
         [imageView addTarget:self action:@selector(imageViewButtonHandler:) forControlEvents:UIControlEventTouchUpInside];
@@ -101,6 +103,7 @@
     }
 
     UIButton *lastView = [[UIButton alloc] initWithFrame:CGRectMake(self.bounds.size.width * (_imageNamesArray.count + 1), 0, self.bounds.size.width, self.bounds.size.height)];
+    lastView.adjustsImageWhenHighlighted = NO;
     [lastView setBackgroundImage:[UIImage imageNamed:_imageNamesArray.firstObject] forState:UIControlStateNormal];
     lastView.tag = JYIndexFlag + 0;
     [lastView addTarget:self action:@selector(imageViewButtonHandler:) forControlEvents:UIControlEventTouchUpInside];
